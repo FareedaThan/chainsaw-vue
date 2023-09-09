@@ -11,8 +11,8 @@ import { RouterLink } from "vue-router";
         <h1>ToDos</h1>
       </div>
       <ul class="nav-routes">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <router-link to="/" class="link">Home</router-link>
+        <router-link to="/about" class="link">About</router-link>
       </ul>
     </nav>
   </header>
@@ -47,9 +47,13 @@ header {
       list-style: none;
       font-size: 20px;
 
-      a {
+      .link {
         text-decoration: none;
         color: inherit;
+      }
+
+      .link.active {
+        font-weight: bold;
       }
     }
   }

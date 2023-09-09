@@ -4,7 +4,7 @@
   <main>
     <p class="header-msg">
       <img src="../assets/aki.png" alt="aki" />
-      <span>Just do your business.</span>
+      <span>Just do your own business.</span>
     </p>
   </main>
 </template>
