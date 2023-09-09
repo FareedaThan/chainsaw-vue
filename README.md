@@ -2,7 +2,8 @@
 
 Savage Chainsaw man theme Todo app using Vue3 framework.
 
-![4](https://github.com/FareedaThan/vue-practice/assets/52806480/35d5a12f-2429-4966-8bba-42b89032859b)
+<img width="546" alt="Screenshot 2023-09-09 at 15 43 50" src="https://github.com/FareedaThan/chainsaw-vue/assets/52806480/9587a300-a4b6-41d3-8e86-cea0f93fe6e1">
+
 
 ## Project setup
 
