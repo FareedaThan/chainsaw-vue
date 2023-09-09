@@ -20,7 +20,7 @@ const createTodo = () => {
   }
 
   todoState.invalid = true;
-  todoState.errMsg = "Todo value cannot be empty";
+  todoState.errMsg = "Todo value cannot be empty Baka!!";
 };
 </script>
 
@@ -39,7 +39,7 @@ const createTodo = () => {
   border: 2px solid coral;
 
   &.input-err {
-    border-color: red;
+    border-color: rgb(222, 112, 112);
   }
 
   &:focus-within {
@@ -61,6 +61,6 @@ const createTodo = () => {
   margin-top: 6px;
   font-size: 12px;
   text-align: center;
-  color: red;
+  color: rgb(222, 112, 112);
 }
 </style>

@@ -65,7 +65,10 @@ const deleteTodo = (todoId) => {
 
 <template>
   <main>
-    <h1>Create Todo</h1>
+    <p class="header-msg">
+      <span>Create Your f**king Todo!</span>
+      <img src="../assets/denji.png" alt="denji" />
+    </p>
     <TodoCreator @create-todo="createTodo" />
     <ul class="todo-list" v-if="todoList.length > 0">
       <TodoItem
@@ -80,12 +83,16 @@ const deleteTodo = (todoId) => {
       />
     </ul>
     <p class="todos-msg" v-else>
-      <Icon icon="noto-v1:sad-but-relieved-face" />
-      <span>You have no todo's to complete! Add one!</span>
+      <img src="../assets/kobane.png" alt="kobane" />
+      <span>a ano.. adddo one please T.T</span>
     </p>
     <p v-if="todosCompleted && todoList.length > 0" class="todos-msg">
-      <Icon icon="noto-v1:party-popper" />
-      <span>You have completed all your todos!</span>
+      <img src="../assets/power.png" alt="power" />
+      <span>Good job human!</span>
+    </p>
+    <p v-if="!todosCompleted && todoList.length > 0" class="todos-msg">
+      <img src="../assets/makima.png" alt="makima" />
+      <span>Do the task and say "yes" or "woof"</span>
     </p>
   </main>
 </template>
@@ -99,10 +106,20 @@ main {
   margin: 0 auto;
   padding: 40px 16px;
 
-  h1 {
+  .header-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     margin-bottom: 16px;
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
     color: coral;
+
+    img {
+      max-width: 50px;
+    }
   }
 
   .todo-list {
@@ -119,7 +136,12 @@ main {
     justify-content: center;
     gap: 8px;
     margin-top: 24px;
+    font-size: 20px;
     color: coral;
+
+    img {
+      max-width: 45px;
+    }
   }
 }
 </style>

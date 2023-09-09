@@ -10,6 +10,8 @@
 button {
   padding: 8px 16px;
   border: none;
+  font-size: 20px;
+  font-weight: bold;
 
   &:hover {
     cursor: pointer;

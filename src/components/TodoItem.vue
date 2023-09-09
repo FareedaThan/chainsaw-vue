@@ -47,7 +47,7 @@ defineEmits(["toggle-complete", "edit-todo", "update-todo", "delete-todo"]);
         v-else
         icon="ph:pencil-fill"
         class="icon edit-icon"
-        color="41b080"
+        color="FDC60C"
         width="22"
         @click="$emit('edit-todo', index)"
       />
