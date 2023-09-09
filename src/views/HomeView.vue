@@ -5,6 +5,7 @@ import { Icon } from "@iconify/vue";
 
 import TodoCreator from "../components/TodoCreator.vue";
 import TodoItem from "../components/TodoItem.vue";
+import TodoDate from "../components/TodoDate.vue";
 
 const todoList = ref([]);
 
@@ -69,6 +70,7 @@ const deleteTodo = (todoId) => {
       <span>Create Your f**king Todo!</span>
       <img src="../assets/denji.png" alt="denji" />
     </p>
+    <TodoDate />
     <TodoCreator @create-todo="createTodo" />
     <ul class="todo-list" v-if="todoList.length > 0">
       <TodoItem
@@ -111,7 +113,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
